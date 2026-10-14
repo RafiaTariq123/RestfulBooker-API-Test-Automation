@@ -67,43 +67,46 @@ The project consists of the following main components:
 - `utils`: Utility classes for configuration and data generation
 - `resources`: Configuration files and test resources
 
-`plaintext
-.
+## Project Structure
+
+```plaintext
+restfulbooker-api-tests/
 ├── pom.xml
 ├── README.md
-├── src
-│   ├── main
-│   └── test
-│       ├── java
-│       │   ├── apis
-│       │   │   ├── applicationApi
-│       │   │   │   ├── BookingApi.java
-│       │   │   │   └── BookingHelper.java
-│       │   │   ├── RestResources.java
-│       │   │   ├── Routes.java
-│       │   │   ├── SpecBuilder.java
-│       │   │   └── TokenManager.java
-│       │   ├── models
-│       │   │   ├── Bookingdates.java
-│       │   │   ├── Booking.java
-│       │   │   └── BookingResponse.java
-│       │   ├── tests
-│       │   │   ├── CreateBookingTests.java
-│       │   │   ├── DeleteBookingTests.java
-│       │   │   ├── GetBookingIdsTests.java
-│       │   │   ├── GetBookingTests.java
-│       │   │   ├── HealthCheckTests.java
-│       │   │   ├── PartialUpdateBookingTests.java
-│       │   │   └── UpdateBookingTests.java
-│       │   └── utils
-│       │       ├── ConfigUtils.java
-│       │       ├── FakerUtils.java
-│       │       └── PropertiesUtils.java
-│       └── resources
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       ├── apis/
+│   │       │   ├── applicationApi/
+│   │       │   │   ├── BookingApi.java
+│   │       │   │   └── BookingHelper.java
+│   │       │   ├── RestResources.java
+│   │       │   ├── Routes.java
+│   │       │   ├── SpecBuilder.java
+│   │       │   └── TokenManager.java
+│   │       ├── models/
+│   │       │   ├── Booking.java
+│   │       │   ├── BookingResponse.java
+│   │       │   └── Bookingdates.java
+│   │       └── utils/
+│   │           ├── ConfigUtils.java
+│   │           ├── FakerUtils.java
+│   │           └── PropertiesUtils.java
+│   └── test/
+│       ├── java/
+│       │   └── tests/
+│       │       ├── CreateBookingTests.java
+│       │       ├── DeleteBookingTests.java
+│       │       ├── GetBookingIdsTests.java
+│       │       ├── GetBookingTests.java
+│       │       ├── HealthCheckTests.java
+│       │       ├── PartialUpdateBookingTests.java
+│       │       └── UpdateBookingTests.java
+│       └── resources/
 │           ├── config.properties
 │           └── testng.xml
-.
 ```
+
 ## Installation
 
 To set up the project, follow these steps:
