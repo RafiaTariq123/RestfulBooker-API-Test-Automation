@@ -1,0 +1,14 @@
+# Maven build output
+target/
+
+# Allure generated test results and reports
+allure-results/
+allure-report/
+
+# IDE files
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
